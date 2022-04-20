@@ -128,7 +128,7 @@ h1 {
 
 .music-travel h2 {
     font-size: 50px;
-    text-align:center;
+    text-align: center;
 }
 
 nav a {
@@ -163,6 +163,26 @@ main {
     padding-top: 40px;
     color: #230c01;
 }
+
+.new-double-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.inside-new-double-dates {
+    display: block;
+    margin-left: 15px;
+    border-left: 1px solid black;
+    text-align: start;
+}
+
+.new-double-date-p {
+    display: flex;
+    align-items: center;
+    color: red;
+    font-weight: bold;
+}
+
 .message {
     display: flex;
     justify-content: center;
@@ -181,6 +201,7 @@ main {
     padding-top: 20px;
     margin-bottom: 70px;
 }
+
 .posters {
     width: 60%;
     display: flex;
@@ -217,7 +238,7 @@ main {
 
 .box p {
     font-size: 20px;
-    margin:0;
+    margin: 0;
 }
 
 .card-about {
@@ -250,10 +271,11 @@ h3 {
 .programm-name:hover {
     color: #230c01;
 }
-.pre-programm{
-	color:black;
-	text-decoration:none;
-	font-size: 18px;
+
+.pre-programm {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .date {
@@ -325,6 +347,7 @@ h3 {
     justify-content: flex-end;
     margin-top: 100px;
 }
+
 .aboutUs3 img {
     width: 300px;
 }
@@ -349,9 +372,11 @@ h3 {
     color: #230c01;
     width: 400px;
 }
-.hook2{
-	height:20px;
+
+.hook2 {
+    height: 20px;
 }
+
 .musichall {
     width: 100%;
     margin-top: 100px;
@@ -537,6 +562,7 @@ footer .container {
     color: white;
     display: block;
 }
+
 .social-media {
     display: flex;
     flex-direction: row;
@@ -544,8 +570,9 @@ footer .container {
 
 .social-media img {
     width: 40px;
-    margin-left:10px;
+    margin-left: 10px;
 }
+
 .social-media img:hover {
     opacity: .7;
 }
@@ -560,7 +587,7 @@ footer .container {
     }
     .music-travel h2 {
         font-size: 45px;
-        text-align:center;
+        text-align: center;
     }
     .music-travel p {
         font-size: 25px;
@@ -590,7 +617,7 @@ footer .container {
     .nav-block {
         height: 80px;
     }
-      nav {
+    nav {
         width: 50%;
     }
     h1 {
@@ -615,10 +642,10 @@ footer .container {
 }
 
 @media(max-width:992px) {
-	html,
-	body {
-    scroll-behavior: auto;
-	}
+    html,
+    body {
+        scroll-behavior: auto;
+    }
     .dropdown {
         display: flex;
         justify-content: flex-end;
@@ -662,8 +689,8 @@ footer .container {
         margin-bottom: 50px;
     }
     .box p {
-    margin:10px;
-}
+        margin: 10px;
+    }
     .box button {
         width: 200px;
         height: 50px;
@@ -720,8 +747,8 @@ footer .container {
     .aboutUs3 h2 {
         font-size: 30px;
         margin-bottom: 20px;
-        width:200px;
-    } 
+        width: 200px;
+    }
     .aboutUs2 p {
         width: 100%;
         padding-left: 0;
@@ -773,7 +800,6 @@ footer .container {
 }
 
 @media(max-width:768px) {
-
     .logo-text {
         display: flex;
         flex-direction: row;
@@ -785,15 +811,15 @@ footer .container {
         font-size: 30px;
     }
     .message p {
-    width: 80%;
-}
+        width: 80%;
+    }
     .music-travel p {
         width: 60%;
         line-height: 30px;
     }
-    .pre-programm{
-	margin-top:10px;
-}
+    .pre-programm {
+        margin-top: 10px;
+    }
     .box {
         font-size: 15px;
         display: flex;
@@ -848,7 +874,7 @@ footer .container {
         color: #000;
         font-size: x-large;
     }
-     .worktime p {
+    .worktime p {
         font-size: 17px;
         margin-bottom: 10px;
     }
@@ -867,15 +893,15 @@ footer .container {
         margin-bottom: 100px;
     }
     .ar_form {
-    width: 60%;
-    padding:5px 10px;
-}
+        width: 60%;
+        padding: 5px 10px;
+    }
     .footer {
         margin: auto;
     }
     .social-media img {
-    width: 30px;
-}
+        width: 30px;
+    }
 }
 
 @media(max-width:576px) {
@@ -928,10 +954,10 @@ footer .container {
         font-size: x-large;
         margin-bottom: 30px;
         margin-top: 30px;
-    } 
-       .aboutUs3 h2 {
+    }
+    .aboutUs3 h2 {
         font-size: 25px;
-    } 
+    }
     .phone {
         font-size: large;
     }

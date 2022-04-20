@@ -50,6 +50,25 @@ nav {
     align-items: center;
 }
 
+.aid-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.aid-media-message {
+    width: 50%;
+    text-align: center;
+    color: white;
+    background-color: #230c01;
+    padding: 10px;
+}
+
+.social-media-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .dropdown {
     display: none;
 }
@@ -164,6 +183,15 @@ main {
     color: #230c01;
 }
 
+.card-title {
+    height: 250px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+}
+
 .new-double-date {
     display: flex;
     flex-direction: row;
@@ -202,18 +230,6 @@ main {
     margin-bottom: 70px;
 }
 
-.posters {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.box {
-    display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-}
-
 .posters-img {
     width: 350px;
 }
@@ -226,19 +242,6 @@ main {
     display: flex;
     justify-content: space-between;
     width: 500px;
-}
-
-.box-div {
-    margin-left: 40px;
-    color: #230c01;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.box p {
-    font-size: 20px;
-    margin: 0;
 }
 
 .card-about {
@@ -254,11 +257,6 @@ main {
 
 .card-about a:hover {
     color: red;
-}
-
-h3 {
-    font-size: 30px;
-    color: #230c01;
 }
 
 .programm-name {
@@ -283,7 +281,7 @@ h3 {
     color: red;
 }
 
-.box button {
+.box-button {
     background-color: white;
     color: #230c01;
     font-weight: bold;
@@ -293,16 +291,13 @@ h3 {
     font-size: 15px;
     transition: 1s;
     cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
 }
 
-.box button:hover {
+.box-button:hover {
     border: 2px rgb(197, 0, 0) solid;
     background-color: rgb(197, 0, 0);
-}
-
-.box button a {
-    color: black;
-    text-decoration: none;
 }
 
 .aboutUs {
@@ -561,6 +556,7 @@ footer .container {
 .footer-info {
     color: white;
     display: block;
+    line-height: normal;
 }
 
 .social-media {
@@ -596,12 +592,6 @@ footer .container {
         width: 50%;
         text-align: center;
     }
-    .posters {
-        width: 100%;
-    }
-    .box-div {
-        margin-left: 40;
-    }
     .music-travel h2 {
         font-size: 30px;
     }
@@ -626,9 +616,6 @@ footer .container {
     }
     .music-travel {
         padding-top: 0;
-    }
-    .posters {
-        width: 100%;
     }
     .music-travel h2 {
         font-size: 30px;
@@ -672,9 +659,6 @@ footer .container {
     .music-travel p {
         font-size: 20px;
         line-height: 20px;
-    }
-    .posters {
-        width: 100%;
     }
     .box {
         font-size: 15px;
@@ -820,16 +804,6 @@ footer .container {
     .pre-programm {
         margin-top: 10px;
     }
-    .box {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .box-div {
-        margin-left: 0;
-        margin-bottom: 100px;
-    }
     .pushkin-button {
         display: flex;
         flex-direction: column;
@@ -908,13 +882,6 @@ footer .container {
     h1 {
         font-size: 25px;
     }
-    .box {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 60px;
-    }
     .music-travel {
         padding-top: 200px;
     }
@@ -929,10 +896,6 @@ footer .container {
     }
     .logo {
         width: 50px;
-    }
-    .box-div {
-        margin-left: 0;
-        margin-bottom: 0;
     }
     .contacts {
         flex-wrap: wrap;

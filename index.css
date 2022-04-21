@@ -19,6 +19,7 @@ span {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
 }
 
 header {
@@ -320,6 +321,10 @@ main {
     margin-bottom: 150px;
 }
 
+h2 {
+    font-weight: 700;
+}
+
 .aboutUs h2 {
     color: #230c01;
     font-size: 50px;
@@ -486,7 +491,7 @@ h5 {
 }
 
 .ar_form {
-    width: 300px;
+    width: 30%;
     border-radius: 10px;
     padding: 20px 30px;
     box-shadow: 2px 1px 5px -1px #111;
@@ -672,30 +677,8 @@ footer .container {
         font-size: 20px;
         line-height: 20px;
     }
-    .box {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .box-div {
-        margin-left: 0;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-    .box p {
-        margin: 10px;
-    }
-    .box button {
-        width: 200px;
-        height: 50px;
-        border: 1px black solid;
-        transition: 1s;
-        font-weight: 400;
-        font-size: 15px;
-        margin-top: 10px;
-        margin-bottom: 30px;
+    .aid-media-message {
+        width: 100%;
     }
     .pushkin-button {
         display: flex;

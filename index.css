@@ -744,7 +744,7 @@ footer .container {
         margin-top: 0;
     }
     .aboutUs3 img {
-        width: 300px;
+        width: 200px;
     }
     .contacts {
         display: block;
@@ -915,9 +915,6 @@ footer .container {
         font-size: x-large;
         margin-bottom: 30px;
         margin-top: 30px;
-    }
-    .aboutUs3 h2 {
-        font-size: 25px;
     }
     .phone {
         font-size: large;

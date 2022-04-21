@@ -799,6 +799,9 @@ footer .container {
         width: 60%;
         line-height: 30px;
     }
+    .card-body {
+        height: 450px;
+    }
     .pre-programm {
         margin-top: 10px;
     }

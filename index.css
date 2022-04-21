@@ -34,6 +34,7 @@ header {
     width: 90%;
     margin: auto;
     font-family: 'Quicksand', sans-serif;
+    padding: 0;
 }
 
 nav {
@@ -682,7 +683,7 @@ footer .container {
         width: 100%;
     }
     .ar_form {
-        width: 100%;
+        width: 70%;
     }
     .pushkin-button {
         display: flex;
@@ -742,7 +743,6 @@ footer .container {
         flex-direction: column;
         align-items: flex-end;
         margin-top: 0;
-        width: 90%;
     }
     .aboutUs3 img {
         width: 200px;

@@ -742,6 +742,7 @@ footer .container {
         flex-direction: column;
         align-items: flex-end;
         margin-top: 0;
+        width: 90%;
     }
     .aboutUs3 img {
         width: 200px;

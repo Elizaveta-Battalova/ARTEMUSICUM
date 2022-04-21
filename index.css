@@ -491,7 +491,7 @@ h5 {
 }
 
 .ar_form {
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
     padding: 20px 30px;
     box-shadow: 2px 1px 5px -1px #111;
@@ -680,6 +680,9 @@ footer .container {
     .aid-media-message {
         width: 100%;
     }
+    .ar_form {
+        width: 60%;
+    }
     .pushkin-button {
         display: flex;
         flex-direction: column;
@@ -860,10 +863,6 @@ footer .container {
     }
     .logoinfo {
         margin-bottom: 100px;
-    }
-    .ar_form {
-        width: 60%;
-        padding: 5px 10px;
     }
     .footer {
         margin: auto;

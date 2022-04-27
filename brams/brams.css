@@ -37,7 +37,7 @@ header {
 }
 
 .container {
-    width: 90%;
+    width: 1400px;
     margin: auto;
     font-family: 'Quicksand', sans-serif;
 }
@@ -61,6 +61,7 @@ h1 {
     font-size: 50px;
     display: flex;
     justify-content: center;
+    letter-spacing: 10px;
     font-weight: 400;
     padding-left: 20px;
     padding-top: 9px;
@@ -73,10 +74,13 @@ h1 {
     padding-top: 150px;
 }
 
+.card div {
+    margin-left: 40px;
+}
+
 .card img {
     margin-bottom: 40px;
     width: 400px;
-    margin-right: 40px;
 }
 
 .card p {
@@ -107,33 +111,34 @@ h3 {
     font-size: 30px;
 }
 
-.card button {
+.box-button {
     background-color: white;
     color: #230c01;
     width: 150px;
     height: 40px;
     border: 2px black solid;
     font-size: 15px;
-    font-weight: 400;
     transition: 1s;
     cursor: pointer;
-    margin-bottom: 30px;
+    text-decoration: none;
+    padding: 8px;
 }
 
-.card button:hover {
+.box-button:hover {
     border: 2px rgb(197, 0, 0) solid;
     background-color: rgb(197, 0, 0);
+    color: black;
 }
 
 .card button a {
-    color: black;
+    color: #230c01;
     text-decoration: none;
 }
 
 .back-button {
     height: 20px;
     text-decoration: none;
-    color: black;
+    color: #230c01;
     transition: .5s;
 }
 
@@ -150,16 +155,6 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 40px;
-}
-
-.pushkin-card {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-}
-
-.pushkin-card img {
-    width: 200px;
 }
 
 .info {
@@ -207,7 +202,7 @@ li {
 }
 
 .musicians a {
-    color: black;
+    color: #230c01;
 }
 
 footer {
@@ -268,8 +263,10 @@ footer .container {
     }
     .card img {
         margin-bottom: 40px;
-        width: 300px;
-        margin-right: 0;
+        width: 350px;
+    }
+    .card p {
+        margin-bottom: 25px;
     }
     nav a {
         display: none;
@@ -293,30 +290,31 @@ footer .container {
     .back-button-adaptive {
         display: flex;
         justify-content: flex-end;
+        margin-top: 120px;
         margin-bottom: 20px;
         margin-right: 25px;
     }
     .back-button-adaptive a {
         height: 20px;
         text-decoration: none;
-        color: black;
+        color: #230c01;
         transition: .5s;
     }
     .card {
         display: flex;
         flex-direction: column;
-        padding-top: 150px;
+        padding-top: 0;
         text-align: center;
+        align-items: center;
+    }
+    .card div {
+        margin-left: 0;
     }
     .card-button {
         margin-bottom: 30px;
     }
-    .pushkin-card {
-        justify-content: center;
-        align-items: center;
-    }
-    .pushkin-card img {
-        width: 150px;
+    .about-mozart {
+        width: 100%;
     }
     .programm {
         display: flex;
@@ -342,9 +340,6 @@ footer .container {
     }
     footer p {
         font-size: 10px;
-    }
-    .about-mozart {
-        width: 100%;
     }
     .social-media img {
         width: 30px;

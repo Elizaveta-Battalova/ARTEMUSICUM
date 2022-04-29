@@ -209,6 +209,14 @@ main {
 
 .card-title {
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #230c01;
+}
+h3{
+    color: red;
+    font-family: "augustus";
 }
 
 .owl-theme .owl-dots .owl-dot span {

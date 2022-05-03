@@ -704,9 +704,6 @@ footer .container {
         display: flex;
         justify-content: flex-end;
     }
-    .main-section {
-        height: 600px;
-    }
     nav {
         display: none;
     }
@@ -841,6 +838,13 @@ footer .container {
     }
     .announcement {
         font-size: 30px;
+    }
+    .fullscreen-bg {
+        background: url('./images/conductor.jpg') center center / cover no-repeat;
+        height: 500px;
+    }
+    .fullscreen-bg__video {
+        display: none;
     }
     .message p {
         width: 80%;

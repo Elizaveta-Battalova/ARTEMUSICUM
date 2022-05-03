@@ -715,14 +715,14 @@ footer .container {
         width: 50px;
     }
     .music-travel {
-        padding-top: 150px;
+        padding-top: 100px;
     }
     .music-travel h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .music-travel p {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 15px;
     }
     .aid-media-message {
         width: 100%;
@@ -840,18 +840,18 @@ footer .container {
         font-size: 30px;
     }
     .fullscreen-bg {
-        background: url('./images/conductor.jpg') center center / cover no-repeat;
-        height: 500px;
+        /* background: url('./images/conductor.jpg') center center / cover no-repeat; */
+        /* height: 500px; */
     }
-    .fullscreen-bg__video {
+    /* .fullscreen-bg__video {
         display: none;
-    }
+    } */
     .message p {
         width: 80%;
     }
     .music-travel p {
         width: 60%;
-        line-height: 30px;
+        line-height: 20px;
     }
     .card-body {
         height: 400px;
@@ -933,18 +933,7 @@ footer .container {
     h1 {
         font-size: 25px;
     }
-    .music-travel {
-        padding-top: 200px;
-    }
-    .music-travel h2 {
-        width: 90%;
-        text-align: center;
-        font-size: 30px;
-    }
-    .music-travel p {
-        font-size: 20px;
-        width: 90%;
-    }
+
     .logo {
         width: 50px;
     }

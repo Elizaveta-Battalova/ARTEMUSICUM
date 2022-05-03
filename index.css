@@ -74,7 +74,6 @@ header {
     background: rgb(35, 12, 1, 0.9);
     position: fixed;
     width: 100%;
-    z-index: 99;
 }
 
 .container {
@@ -217,6 +216,7 @@ main {
     flex: 1 1 auto;
     flex-direction: column;
     background-size: 100%;
+    z-index: -1;
 }
 
 .announcement {

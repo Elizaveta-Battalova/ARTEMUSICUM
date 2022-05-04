@@ -66,6 +66,11 @@ h1 {
     padding-top: 9px;
     font-family: "augustus";
 }
+video {
+    width: 445px;
+    height: 300px;
+    margin-bottom: 20px;
+}
 
 .card {
     display: flex;
@@ -323,6 +328,7 @@ footer .container {
         flex-direction: column;
         padding-top: 150px;
         text-align: center;
+        align-items: center;
     }
     .card p {
         font-size: 15px;
@@ -345,6 +351,11 @@ justify-content: center;
         flex-direction: column;
         padding-bottom: 40px;
         text-align: center;
+    }
+    video {
+        width: 330px;
+        height: 200px;
+        margin-bottom: 20px;
     }
     h4 {
         font-size: x-large;

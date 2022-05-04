@@ -812,6 +812,12 @@ footer .container {
         display: flex;
         flex-direction: row;
     }
+    /* .video{
+display: none;
+    }
+    .video{
+        background-image: url("./images/conductor.jpg");
+    } */
     .btn-secondary {
         background-color: #230c01;
     }

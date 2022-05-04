@@ -15,28 +15,8 @@ span {
     font-family: "augustus";
 }
 
-
 .owl-nav {
     font-size: 50px;
-}
-
-.one-item-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.one-item {
-    text-align: center;
-    height: fit-content;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
-    width: fit-content;
-    margin: 0;
-}
-
-.one-item-info {
-    display: flex;
-    flex-direction: column;
 }
 
 .wrapper {
@@ -47,7 +27,7 @@ span {
 }
 
 header {
-    background: rgb(35, 12, 1, 0.9);
+    background: rgb(35, 12, 1, 0.95);
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -59,11 +39,10 @@ header {
     font-family: 'Quicksand', sans-serif;
     padding: 0;
 }
-#myVideo {
+video{
     position: absolute;
-    right: 0;
-    bottom: 0;
-
+    z-index: -1;
+    max-width: 100%;
 }
 
 nav {
@@ -91,7 +70,7 @@ nav {
     width: 50%;
     text-align: center;
     color: white;
-    background: rgb(35, 12, 1, 0.9);
+   background: rgb(35, 12, 1, 0.9);
     padding: 10px;
 }
 
@@ -124,8 +103,8 @@ nav {
     display: none;
     position: absolute;
     background: rgb(35, 12, 1, 0.9);
-    opacity: 0.9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-list-container a {
@@ -167,15 +146,12 @@ h1 {
 }
 
 .music-travel {
-    position: absolute;
-    width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-    z-index: 999;
+    margin-top: 300px;
 }
 
 .music-travel h2 {
@@ -195,21 +171,42 @@ nav a:hover {
     color: white;
 }
 
+
 main {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
     background-size: 100%;
-    z-index: 0;
-    margin-top: 500px;
+    background-color: white;
 }
-
 
 .announcement {
     text-align: center;
     font-size: 45px;
     padding-top: 40px;
     color: #230c01;
+}
+
+.one-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.one-item {
+    text-align: center;
+    height: fit-content;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    width: fit-content;
+}
+
+.one-item-info {
+    display: flex;
+    flex-direction: column;
+}
+.one-item .card-body {
+    height: fit-content;
 }
 
 .card-title {
@@ -237,6 +234,7 @@ h3{
 .inside-new-double-dates {
     display: block;
     margin-left: 15px;
+  padding-left:15px;
     border-left: 1px solid black;
     text-align: start;
 }
@@ -632,11 +630,12 @@ footer .container {
         padding-left: 10px;
     }
     .music-travel {
-        padding-top: 0;
+        margin-top: 100px;
     }
     .music-travel h2 {
         font-size: 45px;
         text-align: center;
+        font-size: 30px;
     }
     .music-travel p {
         font-size: 25px;
@@ -644,9 +643,6 @@ footer .container {
         padding-top: 40px;
         width: 50%;
         text-align: center;
-    }
-    .music-travel h2 {
-        font-size: 30px;
     }
     .logo {
         width: 80px;
@@ -668,14 +664,14 @@ footer .container {
         padding-left: 0px;
         padding-top: 10px;
     }
-    .music-travel {
-        padding-top: 0;
-    }
     .music-travel h2 {
         font-size: 30px;
     }
     .logo {
         width: 80px;
+    }
+      .card-body {
+        height: 420px;
     }
     .footer {
         margin: auto;
@@ -691,25 +687,21 @@ footer .container {
         display: flex;
         justify-content: flex-end;
     }
+    .main-section {
+        height: 600px;
+    }
     nav {
         display: none;
-    }
-    .music-travel {
-        padding-top: 0;
-        margin-top: 0;
     }
     .logo {
         width: 50px;
     }
-    .music-travel {
-        padding-top: 162px;
-    }
     .music-travel h2 {
-        font-size: 25px;
+        font-size: 35px;
     }
     .music-travel p {
-        font-size: 15px;
-        line-height: 15px;
+        font-size: 20px;
+        line-height: 20px;
     }
     .aid-media-message {
         width: 100%;
@@ -829,11 +821,13 @@ footer .container {
     .message p {
         width: 80%;
     }
+    .music-travel {
+        margin-top: 80px;
+    }
     .music-travel p {
         width: 60%;
-        line-height: 20px;
+        line-height: 30px;
     }
-
     .card-body {
         height: 400px;
     }
@@ -914,7 +908,15 @@ footer .container {
     h1 {
         font-size: 25px;
     }
-
+    .music-travel h2 {
+        width: 90%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .music-travel p {
+        font-size: 20px;
+        width: 90%;
+    }
     .logo {
         width: 50px;
     }

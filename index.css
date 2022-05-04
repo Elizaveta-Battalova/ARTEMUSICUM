@@ -14,31 +14,7 @@ body {
 span {
     font-family: "augustus";
 }
-.fullscreen-bg {
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
-    height: 418px;
-    width: 100%;
-    padding-top:45%;
-}
- 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    z-index: 1;
-}
-.overlay {
-    background: rgba(0,0,0,0.6);
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: 30;
-}
+
 
 .owl-nav {
     font-size: 50px;
@@ -74,6 +50,7 @@ header {
     background: rgb(35, 12, 1, 0.9);
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 
 .container {
@@ -81,6 +58,12 @@ header {
     margin: auto;
     font-family: 'Quicksand', sans-serif;
     padding: 0;
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
 }
 
 nav {
@@ -184,12 +167,15 @@ h1 {
 }
 
 .music-travel {
+    position: absolute;
+    width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 200px;
+    z-index: 999;
 }
 
 .music-travel h2 {
@@ -215,6 +201,7 @@ main {
     flex-direction: column;
     background-size: 100%;
     z-index: 0;
+    margin-top: 500px;
 }
 
 
@@ -846,14 +833,7 @@ footer .container {
         width: 60%;
         line-height: 20px;
     }
-    /* .fullscreen-bg {
-        overflow: hidden;
-        z-index: 1;
-        position: relative;
-        height: 380px;
-        width: 100%;
-        padding-top:45%;
-    } */
+
     .card-body {
         height: 400px;
     }
@@ -875,15 +855,6 @@ footer .container {
     }
     .box div {
         margin-left: 0;
-    }
-    .fullscreen-bg {
-        background: url('./images//conductor.jpg') center center / cover no-repeat;
-    }
-    .fullscreen-bg__video {
-        display: none;
-    }
-    .overlay {
-        background: none;
     }
     .what-we-do h2 {
         width: 30%;

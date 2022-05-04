@@ -715,7 +715,7 @@ footer .container {
         width: 50px;
     }
     .music-travel {
-        padding-top: 100px;
+        padding-top: 162px;
     }
     .music-travel h2 {
         font-size: 25px;
@@ -846,14 +846,14 @@ footer .container {
         width: 60%;
         line-height: 20px;
     }
-    .fullscreen-bg {
+    /* .fullscreen-bg {
         overflow: hidden;
         z-index: 1;
         position: relative;
         height: 380px;
         width: 100%;
         padding-top:45%;
-    }
+    } */
     .card-body {
         height: 400px;
     }
@@ -875,6 +875,15 @@ footer .container {
     }
     .box div {
         margin-left: 0;
+    }
+    .fullscreen-bg {
+        background: url('./images//conductor.jpg') center center / cover no-repeat;
+    }
+    .fullscreen-bg__video {
+        display: none;
+    }
+    .overlay {
+        background: none;
     }
     .what-we-do h2 {
         width: 30%;

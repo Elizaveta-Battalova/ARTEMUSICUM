@@ -39,11 +39,6 @@ header {
     font-family: 'Quicksand', sans-serif;
     padding: 0;
 }
-video{
-    position: absolute;
-    z-index: -1;
-    max-width: 100%;
-}
 
 nav {
     width: 40%;
@@ -58,6 +53,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+video{
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
 }
 
 .aid-media {
@@ -151,7 +151,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .music-travel h2 {
@@ -630,12 +630,11 @@ footer .container {
         padding-left: 10px;
     }
     .music-travel {
-        margin-top: 100px;
+        padding-top: 0;
     }
     .music-travel h2 {
         font-size: 45px;
         text-align: center;
-        font-size: 30px;
     }
     .music-travel p {
         font-size: 25px;
@@ -643,6 +642,9 @@ footer .container {
         padding-top: 40px;
         width: 50%;
         text-align: center;
+    }
+    .music-travel h2 {
+        font-size: 30px;
     }
     .logo {
         width: 80px;
@@ -663,6 +665,9 @@ footer .container {
         font-size: 30px;
         padding-left: 0px;
         padding-top: 10px;
+    }
+    .music-travel {
+        padding-top: 0;
     }
     .music-travel h2 {
         font-size: 30px;
@@ -693,8 +698,15 @@ footer .container {
     nav {
         display: none;
     }
+    .music-travel {
+        padding-top: 0;
+        margin-top: 0;
+    }
     .logo {
         width: 50px;
+    }
+    .music-travel {
+        padding-top: 150px;
     }
     .music-travel h2 {
         font-size: 35px;
@@ -812,14 +824,15 @@ footer .container {
         display: flex;
         flex-direction: row;
     }
-    /* .video{
-display: none;
-    }
-    .video{
-        background-image: url("./images/conductor.jpg");
-    } */
     .btn-secondary {
         background-color: #230c01;
+    }
+    video{
+        display: none;
+    }
+    .music-travel{
+        background-image: url("./images/conductor.jpg");
+        background-repeat: no-repeat;
     }
     .announcement {
         font-size: 30px;
@@ -827,13 +840,9 @@ display: none;
     .message p {
         width: 80%;
     }
-    .music-travel {
-        margin-top: 80px;
-        height: 200px;
-    }
     .music-travel p {
         width: 60%;
-        line-height: 20px;
+        line-height: 30px;
     }
     .card-body {
         height: 400px;
@@ -915,13 +924,16 @@ display: none;
     h1 {
         font-size: 25px;
     }
+    .music-travel {
+        padding-top: 200px;
+    }
     .music-travel h2 {
         width: 90%;
         text-align: center;
-        font-size: 15px;
+        font-size: 30px;
     }
     .music-travel p {
-        font-size: 10px;
+        font-size: 20px;
         width: 90%;
     }
     .logo {

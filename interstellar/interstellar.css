@@ -66,10 +66,8 @@ h1 {
   padding-top: 9px;
   font-family: "augustus";
 }
-video {
-  width: 445px;
-  height: 300px;
-  margin-bottom: 20px;
+.program-name-adaptive {
+  display: none;
 }
 
 .card {
@@ -312,6 +310,7 @@ footer .container {
     display: none;
   }
   .back-button-adaptive {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
@@ -381,5 +380,13 @@ footer .container {
   }
   .social-media img {
     width: 30px;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    display: none;
+  }
+  .program-name-adaptive {
+    display: block;
   }
 }

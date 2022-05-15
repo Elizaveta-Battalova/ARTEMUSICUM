@@ -170,22 +170,16 @@
                 >
               </p>
               <div class="pushkin-card">
-                <button>
-                  <a
-                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@8874378', type: 'session' }) }])"
-                    href="#"
-                    >КУПИТЬ БИЛЕТЫ</a
-                  >
-                </button>
                 <!-- <a href="../pushkin-card/pushkin.html"
                   ><img src="../images/pushkin-card-mini.jpg" alt="artemusicum"
                 /></a> -->
               </div>
             </div>
-            <div id="ya-widget-frame"></div>
             <a class="back-button" href="../index.html#hook">назад к афише</a>
             <a href="../test.html">test</a>
           </div>
+
+          <div id="ya-widget-frame"></div>
           <div class="programm">
             <div class="about-mozart">
               <h4>Программа</h4>
@@ -320,6 +314,21 @@
         "ac32997f-5dd4-4585-82c6-3954263f8027",
       ]);
       dealer.push(["setDefaultRegionId", 213]);
+
+      YandexTicketsDealer.push([
+        "getDealer",
+        function (dealer) {
+          const widget = dealer.Widget("ticketsteam-2282@8874378", "session", {
+            target: document.getElementById("ya-widget-frame"),
+            onRequestClose: function () {
+              widget.unmount();
+              widget.destroy();
+            },
+          });
+
+          widget.mount({ style: { height: "600px" } });
+        },
+      ]);
 
       /* Загрузка */
       (function () {

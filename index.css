@@ -1,995 +1,1001 @@
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: "augustus";
-    src: url("./fonts/augustus.otf");
+  font-family: "augustus";
+  src: url("./fonts/augustus.otf");
 }
 
 span {
-    font-family: "augustus";
+  font-family: "augustus";
 }
 
 .owl-nav {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
 }
 
 header {
-    background: rgb(35, 12, 1, 0.95);
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+  background: rgb(35, 12, 1, 0.95);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0;
+  width: 90%;
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
 }
 
 nav {
-    width: 40%;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 40%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-video{
-    position: absolute;
-    z-index: -1;
-    max-width: 100%;
+video {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
 }
 
 .aid-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .aid-media-message {
-    width: 50%;
-    text-align: center;
-    color: white;
-   background: rgb(35, 12, 1, 0.9);
-    padding: 10px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  background: rgb(35, 12, 1, 0.9);
+  padding: 10px;
 }
 
 .social-media-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown {
-    display: none;
+  display: none;
 }
 
 .dropdown-btn {
-    background-image: url("./images/menu.png");
-    background-size: contain;
-    width: 35px;
-    height: 35px;
-    border: none;
-    cursor: pointer;
+  background-image: url("./images/menu.png");
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
 }
 
 .dropdown-btn:hover {
-    background-color: black;
+  background-color: black;
 }
 
 .dropdown-list-container {
-    text-align: center;
-    width: 200px;
-    padding: 15px 25px;
-    display: none;
-    position: absolute;
-    background: rgb(35, 12, 1, 0.9);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  text-align: center;
+  width: 200px;
+  padding: 15px 25px;
+  display: none;
+  position: absolute;
+  background: rgb(35, 12, 1, 0.9);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-list-container a {
-    font-size: 15px;
-    line-height: 60px;
-    text-decoration: none;
-    color: white;
-    display: block;
-    opacity: 1;
-    font-family: "augustus";
+  font-size: 15px;
+  line-height: 60px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  opacity: 1;
+  font-family: "augustus";
 }
 
 .dropdown-list-container a:hover {
-    color: #ddd;
+  color: #ddd;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 .logo-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
-    width: 110px;
+  width: 110px;
 }
 
 h1 {
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    padding-left: 20px;
-    font-family: "augustus";
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding-left: 20px;
+  font-family: "augustus";
 }
 
 .music-travel {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
 }
 
 .music-travel h2 {
-    font-size: 50px;
-    text-align: center;
+  font-size: 50px;
+  text-align: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition: .5s;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 nav a:hover {
-    font-size: 25px;
-    color: white;
+  font-size: 25px;
+  color: white;
 }
 
-
 main {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    background-size: 100%;
-    background-color: white;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  background-size: 100%;
+  background-color: white;
 }
 
 .announcement {
-    text-align: center;
-    font-size: 45px;
-    padding-top: 40px;
-    color: #230c01;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 40px;
+  color: #230c01;
 }
 
 .one-item-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .one-item {
-    text-align: center;
-    height: fit-content;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
-    width: fit-content;
+  text-align: center;
+  height: fit-content;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: fit-content;
 }
 
 .one-item-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .one-item .card-body {
-    height: fit-content;
+  height: fit-content;
 }
 
 .card-title {
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #230c01;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #230c01;
 }
-h3{
-    color: red;
-    font-family: "augustus";
+h3 {
+  color: red;
+  font-family: "augustus";
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .new-double-date {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .inside-new-double-dates {
-    display: block;
-    margin-left: 15px;
-  padding-left:15px;
-    border-left: 1px solid black;
-    text-align: start;
+  display: block;
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid black;
+  text-align: start;
 }
 
 .new-double-date-p {
-    display: flex;
-    align-items: center;
-    color: red;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: red;
+  font-weight: bold;
 }
 
 .message {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .message p {
-    width: 50%;
-    border: 2px solid #230c01;
-    padding: 10px;
-    text-align: center;
+  width: 50%;
+  border: 2px solid #230c01;
+  padding: 10px;
+  text-align: center;
 }
 
 .music-travel p {
-    font-size: 20px;
-    line-height: 40px;
-    padding-top: 20px;
-    margin-bottom: 70px;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 20px;
+  margin-bottom: 70px;
 }
 
 .posters-img {
-    width: 350px;
+  width: 400px;
 }
 
 .pushkin-card-img {
-    width: 150px;
+  width: 150px;
 }
 
 .pushkin-button {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
 }
 
 .card-about {
-    font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .card-about a {
-    text-decoration: none;
-    color: #230c01;
-    transition: 1s;
+  text-decoration: none;
+  color: #230c01;
+  transition: 1s;
 }
 
 .card-about a:hover {
-    color: red;
+  color: red;
 }
 
 .programm-name {
-    text-decoration: none;
-    font-size: 23px;
-    color: #230c01;
-    transition: 1s;
+  text-decoration: none;
+  font-size: 23px;
+  color: #230c01;
+  transition: 1s;
 }
 
 .programm-name:hover {
-    color: #230c01;
+  color: #230c01;
 }
 
 .pre-programm {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .date {
-    font-weight: bold;
-    color: red;
+  font-weight: bold;
+  color: red;
 }
 
 .box-button {
-    background-color: white;
-    color: #230c01;
-    width: 150px;
-    height: 40px;
-    border: 2px black solid;
-    font-size: 15px;
-    transition: 1s;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 8px;
+  background-color: white;
+  color: #230c01;
+  width: 150px;
+  height: 40px;
+  border: 2px black solid;
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px;
 }
 
 .box-button:hover {
-    border: 2px rgb(197, 0, 0) solid;
-    background-color: rgb(197, 0, 0);
-    color: white;
+  border: 2px rgb(197, 0, 0) solid;
+  background-color: rgb(197, 0, 0);
+  color: white;
 }
 
 .ludovico-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ludovico-buttons a {
-    width: 200px;
-    margin-bottom: 5px;
+  width: 200px;
+  margin-bottom: 5px;
 }
 
 .aboutUs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 150px;
-    margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 h2 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .aboutUs h2 {
-    color: #230c01;
-    font-size: 50px;
+  color: #230c01;
+  font-size: 50px;
 }
 
 .aboutUs p {
-    font-size: 20px;
-    padding-left: 10px;
-    color: #230c01;
+  font-size: 20px;
+  padding-left: 10px;
+  color: #230c01;
 }
 
 .we-are {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
 }
 
 .what-we-do {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
 }
 
 .aboutUs2 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .aboutUs3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 100px;
 }
 
 .aboutUs3 img {
-    width: 300px;
+  width: 300px;
 }
 
 .aboutUs2 h2 {
-    color: #230c01;
-    font-size: 50px;
-    width: 200px;
-    margin-right: 20px;
-    transition: 1s;
+  color: #230c01;
+  font-size: 50px;
+  width: 200px;
+  margin-right: 20px;
+  transition: 1s;
 }
 
 .aboutUs3 h2 {
-    color: #230c01;
-    font-size: 50px;
-    width: 360px;
+  color: #230c01;
+  font-size: 50px;
+  width: 360px;
 }
 
 .aboutUs2 p {
-    font-size: 20px;
-    padding-left: 50px;
-    color: #230c01;
-    width: 400px;
+  font-size: 20px;
+  padding-left: 50px;
+  color: #230c01;
+  width: 400px;
 }
 
 .hook2 {
-    height: 20px;
+  height: 20px;
 }
 
 .musichall {
-    width: 100%;
-    margin-top: 100px;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .logoinfo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 120px;
-    font-family: "augustus";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  font-family: "augustus";
 }
 
 .logoinfo img {
-    width: 200px;
+  width: 200px;
 }
 
 .logoinfo div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
 }
 
 .logoinfo p {
-    margin-bottom: 10px;
-    font-size: 12px;
-    color: #230c01;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #230c01;
 }
 
 h4 {
-    font-family: "augustus";
-    font-size: 50px;
-    color: #230c01;
-    margin-bottom: 15px;
+  font-family: "augustus";
+  font-size: 50px;
+  color: #230c01;
+  margin-bottom: 15px;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 150px;
 }
 
 .worktime {
-    text-align: center;
+  text-align: center;
 }
 
 .worktime p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #230c01;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #230c01;
 }
 
 h5 {
-    font-size: 25px;
-    font-family: "augustus";
-    margin-bottom: 20px;
-    color: #230c01;
+  font-size: 25px;
+  font-family: "augustus";
+  margin-bottom: 20px;
+  color: #230c01;
 }
 
 .phone a {
-    color: #000;
-    font-size: x-large;
-    text-decoration: none;
+  color: #000;
+  font-size: x-large;
+  text-decoration: none;
 }
 
 .worktime-button {
-    background-color: white;
-    padding: 10px;
-    text-decoration: none;
-    color: #230c01;
-    font-weight: 400;
-    width: 200px;
-    height: 40px;
-    border: 2px black solid;
-    transition: 1s;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  color: #230c01;
+  font-weight: 400;
+  width: 200px;
+  height: 40px;
+  border: 2px black solid;
+  transition: 1s;
 }
 
 .worktime-button:hover {
-    border: 2px rgb(197, 0, 0) solid;
-    color: #230c01;
+  border: 2px rgb(197, 0, 0) solid;
+  color: #230c01;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .form a {
-    color: #000;
-    margin-top: 20px;
+  color: #000;
+  margin-top: 20px;
 }
 
 .ar_form p {
-    color: #230c01;
-    font-size: large;
+  color: #230c01;
+  font-size: large;
 }
 
 .ar_form {
-    width: 40%;
-    border-radius: 10px;
-    padding: 20px 30px;
-    box-shadow: 2px 1px 5px -1px #111;
-    text-align: center;
+  width: 40%;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 2px 1px 5px -1px #111;
+  text-align: center;
 }
 
 .ar_form * {
-    transition: .3s ease-in-out;
-    box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 .ar_form form {
-    width: 100%;
+  width: 100%;
 }
 
 .ar_form form input {
-    width: 90%;
-    margin: .6em 0;
-    padding: 10px 10px;
-    border: 0;
-    font-weight: 700;
-    background-color: transparent;
-    outline: none;
-    border-color: #230c01;
-    border-radius: 20px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  width: 90%;
+  margin: 0.6em 0;
+  padding: 10px 10px;
+  border: 0;
+  font-weight: 700;
+  background-color: transparent;
+  outline: none;
+  border-color: #230c01;
+  border-radius: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .ar_form form input[type="text"],
 .ar_form form input[type="password"] {
-    border: 2px solid gray;
-    color: #230c01;
+  border: 2px solid gray;
+  color: #230c01;
 }
-
 
 /* #03273D; */
 
 .ar_form form input[type="text"]:focus,
 .ar_form form input[type="password"]:focus {
-    border-color: #230c01;
-    width: 100%
+  border-color: #230c01;
+  width: 100%;
 }
 
 .ar_form form input[type="submit"] {
-    background-color: #230c01;
-    color: white;
-    width: 70%;
+  background-color: #230c01;
+  color: white;
+  width: 70%;
 }
 
 .ar_form form input[type="submit"]:hover {
-    width: 80%;
-    background-color: #752703;
+  width: 80%;
+  background-color: #752703;
 }
 
 .ar_form a {
-    color: #bbb;
-    margin-top: 2em;
-    text-align: center;
-    display: block;
+  color: #bbb;
+  margin-top: 2em;
+  text-align: center;
+  display: block;
 }
 
 .ar_form a:hover {
-    color: #a33400;
+  color: #a33400;
+}
+footer {
+  width: 100%;
+  background-color: #230c01;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 footer {
-    background-color: #230c01;
+  background-color: #230c01;
 }
 
 footer .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
 .footer-info {
-    color: white;
-    display: block;
-    line-height: normal;
+  color: white;
+  display: block;
 }
-
 .social-media {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .social-media img {
-    width: 40px;
-    margin-left: 10px;
+  width: 40px;
+  margin-left: 10px;
 }
-
 .social-media img:hover {
-    opacity: .7;
+  opacity: 0.7;
 }
 
-@media(max-width: 1400px) {
-    h1 {
-        font-size: 40px;
-        padding-left: 10px;
-    }
-    .music-travel {
-        padding-top: 0;
-    }
-    .music-travel h2 {
-        font-size: 45px;
-        text-align: center;
-    }
-    .music-travel p {
-        font-size: 25px;
-        line-height: 30px;
-        padding-top: 40px;
-        width: 50%;
-        text-align: center;
-    }
-    .music-travel h2 {
-        font-size: 30px;
-    }
-    .logo {
-        width: 80px;
-    }
-    .footer {
-        margin: auto;
-    }
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 40px;
+    padding-left: 10px;
+  }
+  .music-travel {
+    padding-top: 0;
+  }
+  .music-travel h2 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .music-travel p {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 40px;
+    width: 50%;
+    text-align: center;
+  }
+  .music-travel h2 {
+    font-size: 30px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .footer {
+    margin: auto;
+  }
 }
 
-@media(max-width: 1200px) {
-    .nav-block {
-        height: 80px;
-    }
-    nav {
-        width: 50%;
-    }
-    h1 {
-        font-size: 30px;
-        padding-left: 0px;
-        padding-top: 10px;
-    }
-    .music-travel {
-        padding-top: 0;
-    }
-    .music-travel h2 {
-        font-size: 30px;
-    }
-    .logo {
-        width: 80px;
-    }
-      .card-body {
-        height: 420px;
-    }
-    .footer {
-        margin: auto;
-    }
+@media (max-width: 1200px) {
+  .nav-block {
+    height: 80px;
+  }
+  nav {
+    width: 50%;
+  }
+  h1 {
+    font-size: 30px;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+  .music-travel {
+    padding-top: 0;
+  }
+  .music-travel h2 {
+    font-size: 30px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .card-body {
+    height: 420px;
+  }
+  .footer {
+    margin: auto;
+  }
 }
 
-@media(max-width:992px) {
-    html,
-    body {
-        scroll-behavior: auto;
-    }
-    .dropdown {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .main-section {
-        height: 600px;
-    }
-    nav {
-        display: none;
-    }
-    .music-travel {
-        padding-top: 0;
-        margin-top: 0;
-    }
-    .logo {
-        width: 50px;
-    }
-    .music-travel {
-        padding-top: 150px;
-    }
-    .music-travel h2 {
-        font-size: 35px;
-    }
-    .music-travel p {
-        font-size: 20px;
-        line-height: 20px;
-    }
-    .aid-media-message {
-        width: 100%;
-    }
-    .ar_form {
-        width: 70%;
-    }
-    .pushkin-button {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
-    .aboutUs {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 0;
-    }
-    .we-are {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .we-are h2 {
-        width: 15%;
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    .what-we-do {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .what-we-do h2 {
-        width: 20%;
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    .what-we-do-text {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .aboutUs2 {
-        display: flex;
-        flex-direction: column;
-    }
-    .aboutUs2 h2 {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    .aboutUs3 h2 {
-        font-size: 30px;
-        margin-bottom: 20px;
-        width: 200px;
-    }
-    .aboutUs2 p {
-        width: 100%;
-        padding-left: 0;
-        margin-bottom: 50px;
-    }
-    .aboutUs3 {
-        margin-bottom: 100px;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 0;
-    }
-    .aboutUs3 img {
-        width: 200px;
-    }
-    .contacts {
-        display: block;
-    }
-    .musichall {
-        margin-top: 0;
-    }
-    .worktime {
-        margin-bottom: 60px;
-    }
-    .aboutUs p {
-        padding-left: 0;
-        margin-bottom: 50px;
-    }
-    .worktime-button {
-        background-color: white;
-        padding: 10px;
-        text-decoration: none;
-        color: #230c01;
-        font-weight: 400;
-        width: 200px;
-        height: 40px;
-        border: 2px black solid;
-        transition: 1s;
-    }
-    .footer-info {
-        width: 60%;
-        font-size: 10px;
-    }
-    .footer img {
-        width: 30px;
-    }
-    .footer {
-        margin: auto;
-    }
+@media (max-width: 992px) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+  .dropdown {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-section {
+    height: 600px;
+  }
+  nav {
+    display: none;
+  }
+  .music-travel {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .logo {
+    width: 50px;
+  }
+  .music-travel {
+    padding-top: 150px;
+  }
+  .music-travel h2 {
+    font-size: 35px;
+  }
+  .music-travel p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .aid-media-message {
+    width: 100%;
+  }
+  .ar_form {
+    width: 70%;
+  }
+  .pushkin-button {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .we-are {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .we-are h2 {
+    width: 15%;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .what-we-do {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .what-we-do h2 {
+    width: 20%;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .what-we-do-text {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aboutUs2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs2 h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .aboutUs3 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  .aboutUs2 p {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+  .aboutUs3 {
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+  .aboutUs3 img {
+    width: 200px;
+  }
+  .contacts {
+    display: block;
+  }
+  .musichall {
+    margin-top: 0;
+  }
+  .worktime {
+    margin-bottom: 60px;
+  }
+  .aboutUs p {
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+  .worktime-button {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: #230c01;
+    font-weight: 400;
+    width: 200px;
+    height: 40px;
+    border: 2px black solid;
+    transition: 1s;
+  }
+  .footer-info {
+    width: 60%;
+    font-size: 10px;
+  }
+  .footer img {
+    width: 30px;
+  }
+  .footer {
+    margin: auto;
+  }
 }
 
-@media(max-width:768px) {
-    .logo-text {
-        display: flex;
-        flex-direction: row;
-    }
-    .btn-secondary {
-        background-color: #230c01;
-    }
-    video{
-        display: none;
-    }
-    .music-travel{
-        background-image: url("./images/conductor.jpg");
-        background-repeat: no-repeat;
-    }
-    .announcement {
-        font-size: 30px;
-    }
-    .message p {
-        width: 80%;
-    }
-    .music-travel p {
-        width: 60%;
-        line-height: 30px;
-    }
-    .card-body {
-        height: 400px;
-    }
-    .pre-programm {
-        margin-top: 10px;
-    }
-    .pushkin-button {
-        display: flex;
-        flex-direction: column;
-    }
-    .pushkin-card-img {
-        width: 120px;
-    }
-    .posters-img {
-        width: 300px;
-    }
-    .logo {
-        width: 50px;
-    }
-    .box div {
-        margin-left: 0;
-    }
-    .what-we-do h2 {
-        width: 30%;
-    }
-    .card-about a {
-        text-decoration: underline;
-    }
-    .logoinfo img {
-        width: 100px;
-    }
-    h4 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    .contacts {
-        margin-bottom: 50px;
-    }
-    h5 {
-        font-size: x-large;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .phone {
-        font-size: large;
-    }
-    .phone a {
-        color: #000;
-        font-size: x-large;
-    }
-    .worktime p {
-        font-size: 17px;
-        margin-bottom: 10px;
-    }
-    .worktime-button {
-        background-color: white;
-        padding: 10px;
-        text-decoration: none;
-        color: #230c01;
-        font-weight: 400;
-        width: 200px;
-        height: 40px;
-        border: 2px black solid;
-        transition: 1s;
-    }
-    .logoinfo {
-        margin-bottom: 100px;
-    }
-    .footer {
-        margin: auto;
-    }
-    .social-media img {
-        width: 30px;
-    }
+@media (max-width: 768px) {
+  .logo-text {
+    display: flex;
+    flex-direction: row;
+  }
+  .btn-secondary {
+    background-color: #230c01;
+  }
+  video {
+    display: none;
+  }
+  .music-travel {
+    background-image: url("./images/conductor.jpg");
+    background-repeat: no-repeat;
+  }
+  .announcement {
+    font-size: 30px;
+  }
+  .message p {
+    width: 80%;
+  }
+  .music-travel p {
+    width: 60%;
+    line-height: 30px;
+  }
+  .card-body {
+    height: 400px;
+  }
+  .pre-programm {
+    margin-top: 10px;
+  }
+  .pushkin-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .pushkin-card-img {
+    width: 120px;
+  }
+  .posters-img {
+    width: 300px;
+  }
+  .logo {
+    width: 50px;
+  }
+  .box div {
+    margin-left: 0;
+  }
+  .what-we-do h2 {
+    width: 30%;
+  }
+  .card-about a {
+    text-decoration: underline;
+  }
+  .logoinfo img {
+    width: 100px;
+  }
+  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin-bottom: 50px;
+  }
+  h5 {
+    font-size: x-large;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .phone {
+    font-size: large;
+  }
+  .phone a {
+    color: #000;
+    font-size: x-large;
+  }
+  .worktime p {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .worktime-button {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: #230c01;
+    font-weight: 400;
+    width: 200px;
+    height: 40px;
+    border: 2px black solid;
+    transition: 1s;
+  }
+  .logoinfo {
+    margin-bottom: 100px;
+  }
+  .footer {
+    margin: auto;
+  }
+  .social-media img {
+    width: 30px;
+  }
 }
 
-@media(max-width:576px) {
-    h1 {
-        font-size: 25px;
-    }
-    .music-travel {
-        padding-top: 200px;
-    }
-    .music-travel h2 {
-        width: 90%;
-        text-align: center;
-        font-size: 30px;
-    }
-    .music-travel p {
-        font-size: 20px;
-        width: 90%;
-    }
-    .logo {
-        width: 50px;
-    }
-    .contacts {
-        flex-wrap: wrap;
-    }
-    .logoinfo img {
-        width: 100px;
-    }
-    .what-we-do h2 {
-        width: 50%;
-    }
-    h4 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    .contacts {
-        margin-bottom: 50px;
-    }
-    h5 {
-        font-size: x-large;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    .phone {
-        font-size: large;
-    }
-    .phone a {
-        color: #000;
-        font-size: x-large;
-    }
-    .worktime-button {
-        background-color: white;
-        padding: 10px;
-        text-decoration: none;
-        color: #230c01;
-        font-weight: bold;
-        width: 200px;
-        height: 40px;
-        border: 2px black solid;
-        transition: 1s;
-    }
-    footer {
-        width: 100%;
-        background-color: #230c01;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-    footer p {
-        font-size: 10px;
-    }
-    .footer {
-        margin: auto;
-    }
+@media (max-width: 576px) {
+  h1 {
+    font-size: 25px;
+  }
+  .music-travel {
+    padding-top: 200px;
+  }
+  .music-travel h2 {
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .music-travel p {
+    font-size: 20px;
+    width: 90%;
+  }
+  .logo {
+    width: 50px;
+  }
+  .contacts {
+    flex-wrap: wrap;
+  }
+  .logoinfo img {
+    width: 100px;
+  }
+  .what-we-do h2 {
+    width: 50%;
+  }
+  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin-bottom: 50px;
+  }
+  h5 {
+    font-size: x-large;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .phone {
+    font-size: large;
+  }
+  .phone a {
+    color: #000;
+    font-size: x-large;
+  }
+  .worktime-button {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: #230c01;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border: 2px black solid;
+    transition: 1s;
+  }
+  footer {
+    width: 100%;
+    background-color: #230c01;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .footer {
+    margin: auto;
+  }
 }

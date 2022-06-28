@@ -13,8 +13,6 @@
       name="Keywords"
       content="концерты классической музыки, музыка, классическая музыка, концерт, artemusicum."
     />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -39,7 +37,12 @@
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css"
+    />
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -107,6 +110,7 @@
 
       gtag("config", "G-T4G4K5ZXSB");
     </script>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -131,7 +135,7 @@
 
     <div class="wrapper">
       <video loop="" muted="" autoplay="">
-        <source src="./video/headervideo.mp4" type="video/mp4" />
+        <source src="./video/shakespeare.mp4" type="video/mp4" />
       </video>
 
       <header>
@@ -149,6 +153,7 @@
               <a href="#about_us">о нас</a>
               <a href="./gallery/galleries-page/galleries-page.html">галерея</a>
               <a href="#contacts">контакты</a>
+              <a href="#reviews">отзывы</a>
               <a href="mailto:support@artemusicum.com?subject=Обращение"
                 >помощь</a
               >
@@ -163,6 +168,7 @@
                   >галерея</a
                 >
                 <a class="scroll" href="#contacts">контакты</a>
+                <a class="scroll" href="#reviews">отзывы</a>
                 <a href="mailto:support@artemusicum.com?subject=Обращение"
                   >помощь</a
                 >
@@ -181,7 +187,6 @@
           <span>«Artemusicum»</span> - концертно-продюсерский центр широкого
           спектра в области музыкальной культуры и искусства.
         </p>
-        <div id="hook"></div>
       </div>
       <main>
         <div class="container">
@@ -193,7 +198,6 @@
                 скидками на приобретение билетов на все концерты и мероприятия в
                 анонсе<br />
                 <span>ARTEMUSICUM!</span>
-                <button class="first">Title Only</button>
               </p>
               <div class="social-media-wrapper">
                 <div class="social-media">
@@ -213,87 +217,151 @@
               </div>
             </div>
           </div>
+
+          <div class="rating">
+            <p>оставьте Вашу оценку</p>
+            <iframe
+              src="https://yandex.ru/sprav/widget/rating-badge/16141274117"
+              width="150"
+              height="50"
+              frameborder="0"
+            ></iframe>
+          </div>
           <!-- <div class="message">
                     <p>Уважаемые зрители!<br>Команда <span>ARTEMUSICUM</span> вынуждена сообщить, что sound перформанс «Шекспир. Ромео и Джульетта», назначенный на 12 марта 2022 года в концертном зале ДК Рассвет, переносится на 8 апреля 2022 года. Место
                         проведения sound перформанса остаётся прежним. Всем, кто на данный момент приобрёл билеты на данное мероприятие, будут отправлены личные письма с извещением о переносе и индивидуальным предложением-презентом от <span>ARTEMUSICUM!</span></p>
                 </div> -->
 
-                <div class="announcement">Май</div>
-   <div class="one-item-wrapper">
-      <div class="one-item">
-          <a class="mozart-img" href="./ludovico-einaudi-redarena/ludovico-einaudi-redarena.html"><img class="posters-img" src="./images/ludovico-einaudi-redarena.jpg" alt="artemusicum"></a>
-          <div class="card-body">
-              <div class="one-item-info">
-                       <p class="date">28 мая | 18:00</p>
-                                  <a style="color: #230c01;" href="https://redarena.ru/about">Сочи | RED Arena</a>
-                                  <p>Sound | Simphony | Show </p>
-                                  <a class="programm-name" href="./ludovico-einaudi-redarena/ludovico-einaudi-redarena.html">Simple Music Ensemble<br>Людовико Эйнауди</a>
-                                      <button class="box-button" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@8501930', type: 'session' }) }])">КУПИТЬ БИЛЕТЫ</button>
-                <h3>SOCHI</h3>
+          <div id="hook"></div>
+          <div class="announcement">Июнь</div>
+
+          <div class="container-fluid my-5">
+            <div class="row">
+              <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="card border-3 shadow">
+                      <a class="mozart-img" href="./debussy/debussy.html"
+                        ><img
+                          class="posters-img"
+                          src="./images/debussy.jpg"
+                          alt="artemusicum"
+                      /></a>
+                      <div class="card-body">
+                        <div class="card-title text-center">
+                          <p class="date">21 июня | 19:00</p>
+                          <p>Москва | Соборная палата</p>
+                          <a class="programm-name" href="./debussy/debussy.html"
+                            >Равель | Дебюсси</a
+                          >
+                          <div class="card-about">
+                            <a href="./sokolov/sokolov.html">Иван Соколов</a>
+                          </div>
+                          <button
+                            class="box-button"
+                            onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@8772507', type: 'session' }) }])"
+                          >
+                            КУПИТЬ БИЛЕТЫ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+                  <div class="item">
+                    <div class="card border-3 shadow">
+                      <a class="mozart-img" href="./lunch/lunch.html"
+                        ><img
+                          class="posters-img"
+                          src="./images/lunch.jpg"
+                          alt="artemusicum"
+                      /></a>
+                      <div class="card-body">
+                        <div class="card-title text-center">
+                          <p class="date">26 июня | 14:00</p>
+                          <p>Москва | Дом Simple music</p>
+                          <a class="programm-name" href="./lunch/lunch.html"
+                            >Simple | Lunch</a
+                          >
+                          <div class="card-about">
+                            <a href="./mozart2502/simpleMusicAnsamble.html"
+                              >Simple music ensemble</a
+                            >
+                          </div>
+                          <button
+                            class="box-button"
+                            onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9020730', type: 'session' }) }])"
+                          >
+                            КУПИТЬ БИЛЕТЫ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="card border-3 shadow">
+                      <a class="mozart-img" href="./reflection/reflection.html"
+                        ><img
+                          class="posters-img"
+                          src="./images/reflection.jpg"
+                          alt="artemusicum"
+                      /></a>
+                      <div class="card-body">
+                        <div class="card-title text-center">
+                          <p class="date">27 июня | 19:00</p>
+                          <p>Москва | Соборная палата</p>
+                          <a
+                            class="programm-name"
+                            href="./reflection/reflection.html"
+                            >Классика | Отражение эпох</a
+                          >
+                          <div class="card-about">
+                            <a href="./mozart2502/simpleMusicAnsamble.html"
+                              >Simple music ensemble</a
+                            >
+                          </div>
+                          <button
+                            class="box-button"
+                            onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@8772606', type: 'session' }) }])"
+                          >
+                            КУПИТЬ БИЛЕТЫ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-  
+            </div>
 
-            <div class="announcement">Июнь</div>
-
+            <div class="announcement">Июль</div>
             <div class="container-fluid my-5">
               <div class="row">
                 <div class="col-12 m-auto">
                   <div class="owl-carousel owl-theme">
-
-
-                    <div class="item">
-                      <div class="card border-3 shadow">
-                          <a class="mozart-img" href="./lunch/lunch.html"><img class="posters-img" src="./images/lunch.jpg" alt="artemusicum"></a>
-                          <div class="card-body">
-                              <div class="card-title text-center">
-                                  <p class="date">12 июня | 14:00</p>
-                                  <p>Москва | Дом Simple music</p>
-                                  <a class="programm-name" href="./lunch/lunch.html">Simple | Lunch</a>
-                                  <div class="card-about">
-                                      <a href="./mozart2502/simpleMusicAnsamble.html">Simple music ensemble</a>
-                                  </div>
-                                  <button
-                                  class="box-button"
-                                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9020697', type: 'session' }) }])"
-                                >
-                                  КУПИТЬ БИЛЕТЫ
-                                </button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-
                     <div class="item">
                       <div class="card border-3 shadow">
                         <a
                           class="mozart-img"
-                          href="./interstellar/interstellar.html"
+                          href="./ludovico-einaudi/ludovico-einaudi.html"
                           ><img
                             class="posters-img"
-                            src="./images/interstellar.jpg"
+                            src="./images/fotofactura-ludovico.jpg"
                             alt="artemusicum"
                         /></a>
                         <div class="card-body">
                           <div class="card-title text-center">
-                            <div class="new-double-date">
-                              <p class="new-double-date-p">17 июня</p>
-                              <div class="inside-new-double-dates">
-                                <p>
-                                  <span>19:00</span> путешествие по планетарию
-                                </p>
-                                <p><span>20:00</span> симфоническое шоу</p>
-                              </div>
-                            </div>
-
-                            <p>Москва | Московский планетарий</p>
+                            <p class="date">8 июля | 20:00</p>
+                            <a
+                              style="color: black"
+                              href="./fotofactura/fotofactura.html"
+                              >Москва | FOTOFAКTURA</a
+                            >
                             <a
                               class="programm-name"
-                              href="./interstellar/interstellar.html"
-                              >«Интерстеллар | Горизонт событий»</a
+                              href="./ludovico-einaudi/ludovico-einaudi.html"
+                              >Людовико Эйнауди | Seven days walking</a
                             >
                             <div class="card-about">
                               <a href="./mozart2502/simpleMusicAnsamble.html"
@@ -302,7 +370,7 @@
                             </div>
                             <button
                               class="box-button"
-                              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@8874378', type: 'session' }) }])"
+                              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9581736', type: 'session' }) }])"
                             >
                               КУПИТЬ БИЛЕТЫ
                             </button>
@@ -310,31 +378,43 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="item">
                       <div class="card border-3 shadow">
-                        <a class="mozart-img" href="./debussy/debussy.html"
+                        <a class="mozart-img" href="./seasons/seasons.html"
                           ><img
                             class="posters-img"
-                            src="./images/debussy.jpg"
+                            src="./images/seasons.jpeg"
                             alt="artemusicum"
                         /></a>
                         <div class="card-body">
                           <div class="card-title text-center">
-                            <p class="date">21 июня | 19:00</p>
+                            <p class="date">13 июля | 19:00</p>
                             <p>Москва | Соборная палата</p>
                             <a
                               class="programm-name"
-                              href="./debussy/debussy.html"
-                              >Равель | Дебюсси</a
+                              href="./seasons/seasons.html"
+                              >Времена года | Чайковский. Вивальди</a
                             >
                             <div class="card-about">
                               <a href="./sokolov/sokolov.html">Иван Соколов</a>
+                              <a href="https://tchaikovskyorchestra.ru/"
+                                >Tchaikovsky orchestra</a
+                              >
                             </div>
-                            <a
+                            <button
                               class="box-button"
-                              href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-2282@8772507?clientKey=ac32997f-5dd4-4585-82c6-3954263f8027&regionId=213"
-                              >КУПИТЬ БИЛЕТЫ</a
+                              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9205548', type: 'session' }) }])"
                             >
+                              КУПИТЬ БИЛЕТЫ
+                            </button>
+
+                            <a href="./pushkin-card/pushkin.html"
+                              ><img
+                                class="pushkin-card-img"
+                                src="./images/pushkin-card-mini.jpg"
+                                alt=""
+                            /></a>
                           </div>
                         </div>
                       </div>
@@ -342,55 +422,73 @@
 
                     <div class="item">
                       <div class="card border-3 shadow">
-              <a class="mozart-img" href="./new-lunch/new-lunch.html"><img class="posters-img" src="./images/new-lunch.jpg" alt="artemusicum"></a>
-              <div class="card-body">
-                  <div class="card-title text-center">
-                      <p class="date">26 июня | 14:00</p>
-                      <p>Москва | Дом Simple music</p>
-                      <a class="programm-name" href="./new-lunch/new-lunch.html">Simple | Lunch</a>
-                      <div class="card-about">
-                          <a href="./mozart2502/simpleMusicAnsamble.html">Simple music ensemble</a>
-                      </div>
-                      <button
-                      class="box-button"
-                      onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9020730', type: 'session' }) }])"
-                    >
-                      КУПИТЬ БИЛЕТЫ
-                    </button>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-                    <div class="item">
-                      <div class="card border-3 shadow">
-                        <a
-                          class="mozart-img"
-                          href="./reflection/reflection.html"
+                        <a class="mozart-img" href="./gevorgian/gevorgian.html"
                           ><img
                             class="posters-img"
-                            src="./images/reflection.jpg"
+                            src="./images/gevorgian.jpeg"
                             alt="artemusicum"
                         /></a>
                         <div class="card-body">
                           <div class="card-title text-center">
-                            <p class="date">27 июня | 19:00</p>
+                            <p class="date">19 июля | 19:00</p>
                             <p>Москва | Соборная палата</p>
                             <a
                               class="programm-name"
-                              href="./reflection/reflection.html"
-                              >Классика | Отражение эпох</a
+                              href="./gevorgian/gevorgian.html"
+                              >Ева Геворгян | Скрябин. Рахманинов</a
+                            >
+                            <div class="card-about">
+                              <a href="./eva-gevorgian/eva-gevorgian.html"
+                                >Ева Геворгян
+                              </a>
+                            </div>
+                            <button
+                              class="box-button"
+                              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9165965', type: 'session' }) }])"
+                            >
+                              КУПИТЬ БИЛЕТЫ
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="card border-3 shadow">
+                        <a class="mozart-img" href="./universe/universe.html"
+                          ><img
+                            class="posters-img"
+                            src="./images/universe.jpg"
+                            alt="artemusicum"
+                        /></a>
+                        <div class="card-body">
+                          <div class="card-title text-center">
+                            <div class="new-double-date">
+                              <p class="new-double-date-p">22 июля</p>
+                              <div class="inside-new-double-dates">
+                                <p>
+                                  <span>19:00</span> путешествие по планетарию
+                                </p>
+                                <p><span>20:00</span> симфоническое шоу</p>
+                              </div>
+                            </div>
+                            <p>Москва | Московский планетарий</p>
+                            <a
+                              class="programm-name"
+                              href="./universe/universe.html"
+                              >Эйнауди | На краю Вселенной</a
                             >
                             <div class="card-about">
                               <a href="./mozart2502/simpleMusicAnsamble.html"
                                 >Simple music ensemble</a
                               >
                             </div>
-                            <a
+                            <button
                               class="box-button"
-                              href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-2282@8772606?clientKey=ac32997f-5dd4-4585-82c6-3954263f8027&regionId=213"
-                              >КУПИТЬ БИЛЕТЫ</a
+                              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9574014', type: 'session' }) }])"
                             >
+                              КУПИТЬ БИЛЕТЫ
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -399,82 +497,193 @@
                 </div>
               </div>
 
-              <div class="announcement">Июль</div>
+              <div class="announcement">Август</div>
+
               <div class="container-fluid my-5">
                 <div class="row">
-                    <div class="col-12 m-auto">
-                        <div class="owl-carousel owl-theme">
-
-                          <div class="item">
-                            <div class="card border-3 shadow">
-                              <a class="mozart-img" href="./seasons/seasons.html"
-                                ><img
-                                  class="posters-img"
-                                  src="./images/seasons.jpeg"
-                                  alt="artemusicum"
-                              /></a>
-                              <div class="card-body">
-                                <div class="card-title text-center">
-                                  <p class="date">13 июля | 19:00</p>
-                                  <p>Москва | Соборная палата</p>
-                                  <a
-                                    class="programm-name"
-                                    href="./seasons/seasons.html"
-                                    >Времена года | Чайковский. Вивальди</a
-                                  >
-                                  <div class="card-about">
-                                    <a href="./sokolov/sokolov.html">Иван Соколов</a>
-                                    <a href="https://tchaikovskyorchestra.ru/">Tchaikovsky orchestra</a>
-                                  </div>
-                                  <button
-                                  class="box-button"
-                                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9205548', type: 'session' }) }])"
+                  <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="card border-3 shadow">
+                          <a
+                            class="mozart-img"
+                            href="./revelation/revelation.html"
+                            ><img
+                              class="posters-img"
+                              src="./images/revelation.jpg"
+                              alt="artemusicum"
+                          /></a>
+                          <div class="card-body">
+                            <div class="card-title text-center">
+                              <p class="date">5 августа | 20:00</p>
+                              <p>Хлебозавод №9 | Москва</p>
+                              <a
+                                class="programm-name"
+                                href="./revelation/revelation.html"
+                                >Людовико Эйнауди | Откровение</a
+                              >
+                              <div class="card-about">
+                                <a href="./mozart2502/simpleMusicAnsamble.html"
+                                  >Simple music ensemble</a
                                 >
-                                  КУПИТЬ БИЛЕТЫ
-                                </button>
-                                </div>
                               </div>
+                              <button
+                                class="box-button"
+                                onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9690847', type: 'session' }) }])"
+                              >
+                                КУПИТЬ БИЛЕТЫ
+                              </button>
                             </div>
                           </div>
-
-
-
-                          <div class="item">
-                            <div class="card border-3 shadow">
-                              <a class="mozart-img" href="./gevorgian/gevorgian.html"
-                                ><img
-                                  class="posters-img"
-                                  src="./images/gevorgian.jpeg"
-                                  alt="artemusicum"
-                              /></a>
-                              <div class="card-body">
-                                <div class="card-title text-center">
-                                  <p class="date">19 июля | 19:00</p>
-                                  <p>Москва | Соборная палата</p>
-                                  <a
-                                    class="programm-name"
-                                    href="./gevorgian/gevorgian.html"
-                                    >Ева Геворгян | Скрябин. Рахманинов</a
-                                  >
-                                  <div class="card-about">
-                                    <a href="./eva-gevorgian/eva-gevorgian.html">Ева Геворгян </a>
-                                  </div>
-                                  <button
-                                  class="box-button"
-                                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9165965', type: 'session' }) }])"
-                                >
-                                  КУПИТЬ БИЛЕТЫ
-                                </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
                         </div>
-                    </div>
-                </div>
+                      </div>
 
+                      <div class="item">
+                        <div class="card border-3 shadow">
+                          <a class="mozart-img" href="./zimmer/zimmer.html"
+                            ><img
+                              class="posters-img"
+                              src="./images/zimmer.jpg"
+                              alt="artemusicum"
+                          /></a>
+                          <div class="card-body">
+                            <div class="card-title text-center">
+                              <p class="date">13 августа | 20:00</p>
+                              <p>Хлебозавод №9 | Москва</p>
+                              <a
+                                class="programm-name"
+                                href="./zimmer/zimmer.html"
+                                >Ханс Циммер | Бесконечность</a
+                              >
+                              <div class="card-about">
+                                <a href="./mozart2502/simpleMusicAnsamble.html"
+                                  >Simple music ensemble</a
+                                >
+                              </div>
+                              <button
+                                class="box-button"
+                                onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9683993', type: 'session' }) }])"
+                              >
+                                КУПИТЬ БИЛЕТЫ
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="card border-3 shadow">
+                          <a class="mozart-img" href="./Serata/Serata.html"
+                            ><img
+                              class="posters-img"
+                              src="./images/serata.jpg"
+                              alt="artemusicum"
+                          /></a>
+                          <div class="card-body">
+                            <div class="card-title text-center">
+                              <p class="date">19 августа | 20:00</p>
+                              <a
+                                style="color: black"
+                                href="./fotofactura/fotofactura.html"
+                                >Москва | FOTOFAКTURA</a
+                              >
+                              <a
+                                class="programm-name"
+                                href="./Serata/Serata.html"
+                                >Людовико Эйнауди | Serata musicale</a
+                              >
+                              <div class="card-about">
+                                <a href="./mozart2502/simpleMusicAnsamble.html"
+                                  >Simple music ensemble</a
+                                >
+                              </div>
+                              <button
+                                class="box-button"
+                                onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@9693483', type: 'session' }) }])"
+                              >
+                                КУПИТЬ БИЛЕТЫ
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="accordion">Сентябрь</button>
+              <div class="panel">
+                <div class="one-item-wrapper">
+                  <div class="one-item">
+                    <a class="mozart-img" href="./zariadie/zariadie.html"
+                      ><img
+                        class="posters-img"
+                        src="./images/zariadie.jpg"
+                        alt="artemusicum"
+                    /></a>
+                    <div class="card-body">
+                      <div class="one-item-info">
+                        <p class="date">17 сентября | 18:00</p>
+                        <a href="https://zaryadyehall.com"
+                          >Москва | Зал Зарядье
+                        </a>
+
+                        <a
+                          class="programm-name"
+                          href="./ludovico-einaudi-redarena/ludovico-einaudi-redarena.html"
+                          >Людовико Эйнауди | Seven days walking</a
+                        >
+                        <div class="card-about">
+                          <a href="./mozart2502/simpleMusicAnsamble.html"
+                            >Simple music ensemble</a
+                          >
+                        </div>
+                        <button
+                          class="box-button"
+                          onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9535287', type: 'session' }) }])"
+                        >
+                          КУПИТЬ БИЛЕТЫ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="accordion">Октябрь</button>
+
+              <div class="panel">
+                <p>Скоро...</p>
+              </div>
+
+              <button class="accordion">Ноябрь</button>
+              <div class="panel">
+                <p>Скоро...</p>
+              </div>
+
+              <div class="reviews" id="reviews"></div>
+              <div class="comments"><p>оставьте Ваш комментарий</p></div>
+
+              <div class="container">
+                <div id="mc-container"></div>
+                <script type="text/javascript">
+                  cackle_widget = window.cackle_widget || [];
+                  cackle_widget.push({ widget: "Comment", id: 79397 });
+                  (function () {
+                    var mc = document.createElement("script");
+                    mc.type = "text/javascript";
+                    mc.async = true;
+                    mc.src =
+                      ("https:" == document.location.protocol
+                        ? "https"
+                        : "http") + "://cackle.me/widget.js";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(mc, s.nextSibling);
+                  })();
+                </script>
+                <a id="mc-link" href="https://cackle.me"></a>
+              </div>
 
               <div class="hook2" id="about_us"></div>
 
@@ -581,7 +790,12 @@
                   required
                   placeholder="example@gmail.com"
                 /><br />
-                <input type="submit" name="submit" value="Отправить" />
+                <input
+                  class="first"
+                  type="submit"
+                  name="submit"
+                  value="Отправить"
+                />
               </form>
             </div>
             <a href="./confidence/confidence.html"
@@ -592,28 +806,31 @@
       </main>
 
       <footer>
-        <footer>
-            <div class="container">
-                <div class="footer-info">
-                    <p>© 2020 концертно продюсерский центр <span>Artemusicum</span>. </p>
-                    <p>г. Москва, ул.Смольная, 44к2, пом.47</p>
-                    <p>Тел.: +7 (495) 227-31-55</p>
-                </div>
-                <div class="social-media">
-                    <div class="inst">
-                        <a href="https://vk.com/public210980801"><img src="./images/vk.png" alt="aremusicum instagram"></a>
-                    </div>
-                    <div class="facebook">
-                        <a href="https://youtube.com/channel/UCvfRifRgFXS9uuytunyk15w"><img src="./images/youtube.png" alt="aremusicum youtube"></a>
-                    </div>
-                    <div class="facebook">
-                        <a href="https://t.me/+9eveCgwOjH1mMTky"><img src="./images/telegram.png" alt="aremusicum telegram"></a>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="footer-info">
+            <p>© 2020 концертно продюсерский центр <span>Artemusicum</span>.</p>
+            <p>г. Москва, ул.Смольная, 44к2, пом.47</p>
+            <p>Тел.: +7 (495) 227-31-55</p>
+          </div>
+          <div class="social-media">
+            <div class="inst">
+              <a href="https://vk.com/public210980801"
+                ><img src="./images/vk.png" alt="aremusicum instagram"
+              /></a>
             </div>
-        </footer>
+            <div class="facebook">
+              <a href="https://youtube.com/channel/UCvfRifRgFXS9uuytunyk15w"
+                ><img src="./images/youtube.png" alt="aremusicum youtube"
+              /></a>
+            </div>
+            <div class="facebook">
+              <a href="https://t.me/+9eveCgwOjH1mMTky"
+                ><img src="./images/telegram.png" alt="aremusicum telegram"
+              /></a>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script

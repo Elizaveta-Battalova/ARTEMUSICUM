@@ -57,7 +57,7 @@ nav {
 video {
   position: absolute;
   z-index: -1;
-  max-width: 100%;
+  width: 100%;
 }
 
 .aid-media {
@@ -177,6 +177,7 @@ main {
   flex-direction: column;
   background-size: 100%;
   background-color: white;
+  text-align: center;
 }
 
 .announcement {
@@ -184,6 +185,18 @@ main {
   font-size: 45px;
   padding-top: 40px;
   color: #230c01;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.comments {
+  display: flex;
+  justify-content: center;
 }
 
 .one-item-wrapper {
@@ -198,6 +211,7 @@ main {
   height: fit-content;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   width: fit-content;
+  border: 2px solid rgb(179, 179, 179);
 }
 
 .one-item-info {
@@ -210,7 +224,7 @@ main {
 }
 
 .card-title {
-  height: 250px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,10 +281,6 @@ h3 {
 
 .posters-img {
   width: 400px;
-}
-
-.pushkin-card-img {
-  width: 150px;
 }
 
 .pushkin-button {
@@ -370,6 +380,41 @@ h2 {
   font-size: 20px;
   padding-left: 10px;
   color: #230c01;
+}
+.reviews {
+  height: 100px;
+}
+.accordion {
+  background-color: #ffffff;
+  border: 2px solid rgb(153, 153, 153);
+  color: #230c01;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  margin-bottom: 30px;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(35, 12, 1, 0.7);
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.slide-down {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .we-are {
@@ -592,6 +637,7 @@ h5 {
 .ar_form a:hover {
   color: #a33400;
 }
+
 footer {
   width: 100%;
   background-color: #230c01;
@@ -617,6 +663,10 @@ footer .container {
   color: white;
   display: block;
 }
+.footer-info p {
+  margin: 0;
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
@@ -626,6 +676,7 @@ footer .container {
   width: 40px;
   margin-left: 10px;
 }
+
 .social-media img:hover {
   opacity: 0.7;
 }
@@ -648,6 +699,9 @@ footer .container {
     padding-top: 40px;
     width: 50%;
     text-align: center;
+  }
+  .card-title {
+    height: 300px;
   }
   .music-travel h2 {
     font-size: 30px;
@@ -682,7 +736,7 @@ footer .container {
     width: 80px;
   }
   .card-body {
-    height: 420px;
+    height: 370px;
   }
   .footer {
     margin: auto;
@@ -851,7 +905,7 @@ footer .container {
     line-height: 30px;
   }
   .card-body {
-    height: 400px;
+    height: 470px;
   }
   .pre-programm {
     margin-top: 10px;
@@ -941,6 +995,9 @@ footer .container {
   .music-travel p {
     font-size: 20px;
     width: 90%;
+  }
+  .card-body {
+    height: 380px;
   }
   .logo {
     width: 50px;

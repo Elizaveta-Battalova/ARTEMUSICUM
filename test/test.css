@@ -189,7 +189,7 @@ body {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-color: rgb(254, 246, 211);
+  background-color: #fffae8;
   /* background-image: linear-gradient(
     147deg,
     rgb(43, 34, 29) 0%,

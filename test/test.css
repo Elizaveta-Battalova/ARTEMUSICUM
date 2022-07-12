@@ -166,6 +166,10 @@ h1 {
     position: fixed;
     z-index: 3;
   }
+  .logo img {
+    height: 3rem;
+    width: 3rem;
+  }
   .hamburger {
     display: block;
     position: absolute;

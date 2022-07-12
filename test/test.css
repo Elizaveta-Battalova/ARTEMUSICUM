@@ -10,14 +10,19 @@ body {
   flex-direction: column;
 }
 nav {
-  height: 6rem;
+  height: 100px;
   width: 100vw;
   background-color: #210d00;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
   z-index: 10;
-  transition: 1s;
+}
+.header {
+  transition: transform 0.5s linear;
+}
+.header.hide {
+  transform: translateY(-100px);
 }
 
 /*Styling logo*/
@@ -215,6 +220,12 @@ h1 {
   }
   li.fade {
     opacity: 1;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #kupasen-ugakimev > span {
+    font-size: 30px;
   }
 }
 /*Animating Hamburger Icon on Click*/

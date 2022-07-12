@@ -163,6 +163,7 @@ h1 {
 /*Stying for small screens*/
 @media screen and (max-width: 800px) {
   nav {
+    height: 60px;
     position: fixed;
     z-index: 3;
   }

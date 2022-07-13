@@ -320,6 +320,14 @@ h1 {
   #kupasen-ugakimev > span {
     font-size: 30px;
   }
+  #kupasen-ugakimev > span:after {
+    background: linear-gradient(
+      to left,
+      rgba(121, 117, 117, 0),
+      rgba(255, 255, 255, 0.2),
+      rgba(121, 117, 117, 0)
+    );
+  }
 }
 /*Animating Hamburger Icon on Click*/
 .toggle .line1 {

@@ -330,7 +330,7 @@ h1 {
     background: linear-gradient(
         to left,
         rgba(121, 117, 117, 0),
-        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.2),
         rgba(121, 117, 117, 0)
       )
       no-repeat -2em 0%;

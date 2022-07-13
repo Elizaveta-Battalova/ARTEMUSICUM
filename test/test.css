@@ -283,7 +283,7 @@ h1 {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
-    background-color: rgb(33, 13, 0, 0.95);
+    background-color: rgb(33, 13, 0, 0.98);
   }
   .nav-links li {
     opacity: 0;
@@ -323,9 +323,9 @@ h1 {
   #kupasen-ugakimev > span:after {
     background: linear-gradient(
       to left,
-      rgba(121, 117, 117, 0),
-      rgba(255, 255, 255, 0.2),
-      rgba(121, 117, 117, 0)
+      rgba(213, 213, 213, 0),
+      rgba(255, 255, 255, 0.1),
+      rgba(213, 213, 213, 0)
     );
   }
 }

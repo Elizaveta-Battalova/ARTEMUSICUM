@@ -575,3 +575,9 @@ h1 {
     width: 30px;
   }
 }
+footer {
+  background-color: #210d00;
+}
+.footer {
+  height: 80px;
+}

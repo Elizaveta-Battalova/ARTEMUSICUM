@@ -2,14 +2,22 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 body {
   min-height: 100vh;
   font-family: "Fira Sans", sans-serif;
   display: flex;
   flex-direction: column;
-}
-body {
   background: linear-gradient(
     -45deg,
     #ffffff,
@@ -131,6 +139,7 @@ nav {
 }
 main {
   display: flex;
+  flex: 1 0 auto;
   flex-direction: column;
   margin-top: 150px;
   text-align: center;
@@ -664,8 +673,10 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 footer {
+  flex: 0 0 auto;
   background-color: #210d00;
 }
 .footer {
   height: 80px;
+  flex: 0 0 auto;
 }

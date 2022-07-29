@@ -135,6 +135,7 @@ main {
   margin-top: 150px;
   text-align: center;
 }
+
 .blick {
   margin-bottom: 50px;
 }
@@ -317,6 +318,7 @@ h1 {
   h1 {
     font-size: 30px;
   }
+
   #kupasen-ugakimev > span {
     font-size: 30px;
   }
@@ -595,6 +597,71 @@ h1 {
     height: 11px;
     width: 30px;
   }
+}
+section {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1) {
+  color: #e0ffff;
+}
+section:nth-child(2) {
+  color: #42455a;
+}
+section:nth-child(3) {
+  color: #e0ffff;
+}
+section:nth-child(4) {
+  color: #42455a;
+}
+section .container {
+  margin: 100px;
+}
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+}
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 footer {
   background-color: #210d00;

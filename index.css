@@ -224,7 +224,7 @@ main {
 }
 
 .card-title {
-  height: 350px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,10 +283,9 @@ h3 {
   width: 400px;
 }
 
-.pushkin-button {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
+.pushkin img {
+  width: 150px !important;
+  margin-top: 15px;
 }
 
 .card-about {
@@ -701,7 +700,7 @@ footer .container {
     text-align: center;
   }
   .card-title {
-    height: 300px;
+    height: 344px;
   }
   .music-travel h2 {
     font-size: 30px;
@@ -736,6 +735,9 @@ footer .container {
     width: 80px;
   }
   .card-body {
+    height: 370px;
+  }
+  .card-title {
     height: 370px;
   }
   .footer {
@@ -792,6 +794,7 @@ footer .container {
     margin-top: 50px;
     margin-bottom: 0;
   }
+
   .we-are {
     display: flex;
     flex-direction: column;
@@ -904,6 +907,9 @@ footer .container {
     width: 60%;
     line-height: 30px;
   }
+  .accordion {
+    width: 100%;
+  }
   .card-body {
     height: 470px;
   }
@@ -916,9 +922,6 @@ footer .container {
   }
   .pushkin-card-img {
     width: 120px;
-  }
-  .posters-img {
-    width: 300px;
   }
   .logo {
     width: 50px;
@@ -997,7 +1000,7 @@ footer .container {
     width: 90%;
   }
   .card-body {
-    height: 380px;
+    height: 430px;
   }
   .logo {
     width: 50px;
@@ -1017,6 +1020,9 @@ footer .container {
   }
   .contacts {
     margin-bottom: 50px;
+  }
+  .posters-img {
+    width: 300px;
   }
   h5 {
     font-size: x-large;

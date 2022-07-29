@@ -641,8 +641,14 @@ section .text-container {
   display: flex;
 }
 section .text-container .text-box {
-  margin: 20px;
-  padding: 20px;
+  width: 30%;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: -3px -3px 20px #ccc;
+  border-radius: 50px 0px 0 20px;
+  text-align: center;
+  overflow: hidden;
 }
 section .text-container .text-box h3 {
   font-size: 30px;
@@ -658,6 +664,9 @@ section .text-container .text-box h3 {
   }
   section .text-container {
     flex-direction: column;
+  }
+  section .text-container .text-box {
+    width: 100%;
   }
 }
 

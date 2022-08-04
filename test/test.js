@@ -59,6 +59,7 @@ window.addEventListener("scroll", () => {
 
   lastScroll = scrollPosition();
 });
+
 $(window).on("load", function () {
   $(".preloader").fadeOut().end().delay(500).fadeOut("slow");
 });

@@ -11,15 +11,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="wrapper">
-      <div class="preloader">
+      <!-- <div class="preloader">
         <div class="preloader__row">
           <div class="preloader__item"></div>
           <div class="preloader__item"></div>
         </div>
-      </div>
+      </div> -->
       <nav class="header" id="navbar">
         <div class="logo">
           <img src="../images/logo.png" alt="Logo Image" />
@@ -44,6 +56,63 @@
           <span class="">начинается здесь</span>
         </div>
 
+        <h2>Сентябрь</h2>
+
+        <div class="blog-slider">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="../images/gravity.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">9 сентября | 20:00</span>
+                <p>19:00 путешествие по планетарию</p>
+                <p>20:00 симфоническое шоу</p>
+                <div class="blog-slider__title">Гравитация</div>
+                <div class="blog-slider__text">
+                  Москва | Московский планетарий
+                </div>
+                <a href="../mozart2502/simpleMusicAnsamble.html"
+                  >Simple music ensemble</a
+                >
+                <button
+                  class="blog-slider__button"
+                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9884744', type: 'session' }) }])"
+                >
+                  КУПИТЬ БИЛЕТЫ
+                </button>
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="../images/zariadie.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">17 сентября | 18:00</span>
+                <div class="blog-slider__title">
+                  Людовико Эйнауди | Seven days walking
+                </div>
+                <a
+                  class="blog-slider__text"
+                  style="color: black"
+                  href="https://zaryadyehall.com"
+                  >Москва | МКЗ Зарядье
+                </a>
+                <button
+                  class="blog-slider__button"
+                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9535287', type: 'session' }) }])"
+                >
+                  КУПИТЬ БИЛЕТЫ
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="blog-slider__pagination"></div>
+        </div>
+
+        <h2>Октябрь</h2>
+
         <div class="blog-slider">
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
@@ -90,6 +159,8 @@
           <div class="blog-slider__pagination"></div>
         </div>
 
+        <h2>Ноябрь</h2>
+
         <div class="blog-slider">
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
@@ -136,81 +207,83 @@
           <div class="blog-slider__pagination"></div>
         </div>
 
-        <div class="blog-slider">
-          <div class="blog-slider__wrp swiper-wrapper">
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="../images/fotofactura-ludovico.jpg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">8 июля | 20:00</span>
-                <div class="blog-slider__title">
-                  Людовико Эйнауди | Seven days walking
+        <div class="container-fluid my-5">
+          <div class="row">
+            <div class="col-12 m-auto">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="card border-3 shadow">
+                    <h3>КТО МЫ?</h3>
+                    <p>
+                      В нашу команду, создающую проекты в сфере академической
+                      симфонической музыки любой сложности, входят
+                      профессиональные деятели театра, оперы и мира музыки в
+                      целом.
+                    </p>
+                  </div>
                 </div>
-                <div class="blog-slider__text">Москва | FOTOFAКTURA</div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
-              </div>
-            </div>
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="../images/seasons.jpeg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">13 июля | 19:00</span>
-                <div class="blog-slider__title">
-                  Времена года | Чайковский. Вивальди
-                </div>
-                <div class="blog-slider__text">Москва | Соборная палата</div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
-              </div>
-            </div>
 
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="../images/gevorgian.jpeg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">19 июля | 19:00</span>
-                <div class="blog-slider__title">Москва | Соборная палата</div>
-                <div class="blog-slider__text">
-                  Ева Геворгян | Скрябин. Рахманинов
+                <div class="item">
+                  <div class="card border-3 shadow">
+                    <h3>КТО МЫ?</h3>
+                    <p>
+                      В нашу команду, создающую проекты в сфере академической
+                      симфонической музыки любой сложности, входят
+                      профессиональные деятели театра, оперы и мира музыки в
+                      целом.
+                    </p>
+                  </div>
                 </div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
+
+                <div class="item">
+                  <div class="card border-3 shadow">
+                    <h3>КТО МЫ?</h3>
+                    <p>
+                      В нашу команду, создающую проекты в сфере академической
+                      симфонической музыки любой сложности, входят
+                      профессиональные деятели театра, оперы и мира музыки в
+                      целом.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="blog-slider__pagination"></div>
         </div>
 
         <section>
           <div class="container reveal">
             <div class="text-container">
-              <div class="text-box">
-                <h3>КТО МЫ?</h3>
-                <p>
-                  В нашу команду, создающую проекты в сфере академической
-                  симфонической музыки любой сложности, входят профессиональные
-                  деятели театра, оперы и мира музыки в целом.
-                </p>
-              </div>
-              <div class="text-box">
-                <h3>ЧТО МЫ ДЕЛАЕМ?</h3>
-                <p>
-                  Каждый день, каждый специалист креативной и творческой команды
-                  <span>"Artemusicum"</span> прилагает максимум усилий для того,
-                  чтобы создать действительно необходимую нашему зрителю
-                  концертную программу, а также встречу с любимыми музыкантами,
-                  артистами, дирижёрами, актёрами театра и кино.
-                </p>
-              </div>
-              <div class="text-box">
-                <h3>ЧТО В НАШИХ ПЛАНАХ?</h3>
-                <p>
-                  Разработка и создание симфонических концертных программ,
-                  симфонических спектаклей, музыкальных перформансов, фестивалей
-                  академической музыки, организация гастрольных туров в крупных
-                  региональных городах.
-                </p>
+              <div class="about-us">
+                <div class="about-us-card">
+                  <h3>КТО МЫ?</h3>
+                  <p>
+                    В нашу команду, создающую проекты в сфере академической
+                    симфонической музыки любой сложности, входят
+                    профессиональные деятели театра, оперы и мира музыки в
+                    целом.
+                  </p>
+                </div>
+                <div class="about-us-card">
+                  <h3>ЧТО МЫ ДЕЛАЕМ?</h3>
+                  <p>
+                    Каждый день, каждый специалист креативной и творческой
+                    команды
+                    <span>"Artemusicum"</span> прилагает максимум усилий для
+                    того, чтобы создать действительно необходимую нашему зрителю
+                    концертную программу, а также встречу с любимыми
+                    музыкантами, артистами, дирижёрами, актёрами театра и кино.
+                  </p>
+                </div>
+                <div class="about-us-card">
+                  <h3>ЧТО В НАШИХ ПЛАНАХ?</h3>
+                  <p>
+                    Разработка и создание симфонических концертных программ,
+                    симфонических спектаклей, музыкальных перформансов,
+                    фестивалей академической музыки, организация гастрольных
+                    туров в крупных региональных городах.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -218,9 +291,9 @@
 
         <section>
           <div class="container reveal">
-            <h2>как с нами связаться:</h2>
+            <h4>как с нами связаться:</h4>
             <div class="text-container">
-              <div class="text-box">
+              <div class="card">
                 <h3>БИЛЕТНЫЙ СТОЛ</h3>
                 <p>
                   <a href="tel:+74952273125" style="color: black !important"
@@ -228,13 +301,13 @@
                   >
                 </p>
               </div>
-              <div class="text-box">
-                <h3>РЕЖИМ РАБОТЫ</h3>
+              <div class="card">
+                <h4>РЕЖИМ РАБОТЫ</h4>
                 <p>понедельник-пятница: с 11:00 до 19:00</p>
                 <p>суббота-воскресенье: выходные</p>
               </div>
-              <div class="text-box">
-                <h3>ОБРАТНАЯ СВЯЗЬ</h3>
+              <div class="card">
+                <h4>ОБРАТНАЯ СВЯЗЬ</h4>
                 <a
                   class="worktime-button"
                   href="mailto:support@artemusicum.com?subject=Обращение"
@@ -247,12 +320,12 @@
 
         <section>
           <div class="container reveal">
-            <h2>Наши партнеры:</h2>
+            <h3>Наши партнеры:</h3>
             <div class="text-container">
               <div class="card">
                 <img src="../images/arnalds.jpg" alt="" />
                 <div class="details">
-                  <h2>Арнальдс</h2>
+                  <h3>Арнальдс</h3>
                   <p>Director</p>
                 </div>
                 <p id="info">
@@ -264,7 +337,7 @@
               <div class="card">
                 <img src="../images/brams.jpg" alt="" />
                 <div class="details">
-                  <h2>Брамс</h2>
+                  <h3>Брамс</h3>
                   <p>Director</p>
                 </div>
                 <p id="info">
@@ -276,7 +349,7 @@
               <div class="card">
                 <img src="../images/revelation.jpg" alt="" />
                 <div class="details">
-                  <h2>Эйнауди</h2>
+                  <h3>Эйнауди</h3>
                   <p>Director</p>
                 </div>
                 <p id="info">
@@ -292,7 +365,11 @@
       <footer>
         <div class="footer">арар</div>
       </footer>
-
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+      ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
       <script src="test.js"></script>

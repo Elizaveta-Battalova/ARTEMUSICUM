@@ -890,13 +890,13 @@ footer .container {
   .btn-secondary {
     background-color: #230c01;
   }
-  video {
+/*   video {
     display: none;
   }
   .music-travel {
     background-image: url("./images/conductor.jpg");
     background-repeat: no-repeat;
-  }
+  } */
   .announcement {
     font-size: 30px;
   }
